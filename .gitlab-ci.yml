@@ -1,0 +1,9 @@
+image: gcc
+before_script:
+  - apt-get install --yes cmake
+  - apt-get install --yes libomp-dev
+
+build:
+  script:
+    - ./runner.sh
+    - ./bin/hello
